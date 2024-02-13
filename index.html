@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/0443ff32da.js" crossorigin="anonymous"></script>
+    <title>Web Games</title>
+  </head>
+
+
+  <body>
+    <div id="counting-game">
+      <h1>Counting Game</h1>
+      Rules
+      <ol>
+        <li>On your turn, decrement the total by a whole number from 
+                <input type="number" id="min-decrement-input" 
+                class="inputs setting-inputs" placeholder="1">
+            to 
+                <input type="number" id="max-decrement-input" 
+                class="inputs setting-inputs" placeholder="3">
+        </li>
+        <li>You win  
+            <select id="select-victory" class="inputs">
+                <option id="victory-1">if you get the total down to 0</option>
+                <option id="victory-2">if the computer gets the total down to 0</option>
+            </select>
+        <li>You lose if the computer gets the total down to 0 on its turn</li>
+        <li>Pick to go first or to go second</li>
+      </ol>
+
+
+      <br>
+
+
+
+
+      <div id="btns">
+        <button id="go-first" class="inputs">Go first</button> <button id="go-second" class="inputs">Go second</button>
+      </div>
+
+
+      <br>
+
+
+      Total: <input type="number" id="count-setting-input" 
+                class="inputs setting-inputs" placeholder="21">
+             <output>21</output>
+      <div>
+        <input
+        type="text" id="decrement-input" class="toggle-disable inputs"
+        placeholder="Input Decrement Value"
+        disabled
+        />
+        <button id="decrement-btn" class="toggle-disable inputs" disabled>Decrement</button>
+      </div>
+ 
+        <br><div id="add-ai-turn"></div>
+
+
+        <button id="restart" class="inputs bottom-btns" disabled>Restart</button>
+
+    </div>
+   
+
+
+   
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+

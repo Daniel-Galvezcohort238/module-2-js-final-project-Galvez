@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    font-size: 2rem;
+}
+
+output {
+    display: none;
+}
+
+
+.inputs {
+    font-size: 1.7rem;
+}
+
+
+#counting-game {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.bottom-btns {
+    margin-top: 6rem;
+}
+
+.setting-inputs {
+    width: 4rem;
+}
